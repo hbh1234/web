@@ -1,0 +1,72 @@
+.upload-status {
+  width: 390px !important;
+  padding: 62px 0 40px;
+  border-radius: 6px;
+  text-align: center;
+  .el-dialog__header {
+    display: none;
+  }
+  .el-dialog__body {
+    padding: 0;
+  }
+}
+.upload-progress__wrap {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin: 0 auto;
+  .el-progress__text {
+    top: 120px;
+    font-size: 12px !important;
+    color: #2595FF;
+  }
+  .el-progress--circle .el-progress__text i, .el-progress--dashboard .el-progress__text i {
+    &::before {
+      display: none;
+    }
+  }
+  .el-progress--circle.is-success .el-progress__text i, .el-progress--dashboard .el-progress__text i {
+    &::after {
+      content: "100%";
+      display: block;
+    }
+  }
+}
+.upload-status__icon {
+  width: 76px;
+  height: 62px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+.upload-status__progress {
+  .el-progress-circle {
+    width: 150px !important;
+  }
+}
+.upload-progress__title {
+  margin-top: 30px;
+  font-size: 22px;
+  color: #333;
+}
+.upload-progress__msg {
+  font-size: 14px;
+  color: #999;
+  padding-top: 7px;
+  padding-bottom: 63px;
+}
+.upload-status__cancel {
+  width: 256px;
+  height: 58px;
+}
+//继续上传按钮
+.upload-status-continue {
+  display: flex;
+  padding: 0 40px;
+  justify-content: space-between;
+  button {
+    width: 142px;
+    height: 58px;
+  }
+}

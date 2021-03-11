@@ -1,0 +1,103 @@
+/* 左侧菜单 */
+.user-set__menu-title {
+  height: 56px;
+  line-height: 56px;
+  text-indent: 30px;
+  font-size: 18px;
+}
+.user-set__menu-list {
+  li {
+    height: 56px;
+    line-height: 56px;
+    font-size: 16px;
+    color: #999;
+    text-indent: 30px;
+    cursor: pointer;
+    &.router-link-active {
+      color: #333;
+      background: #F0F9FF;
+    }
+  }
+}
+.account-seting-title {
+  height: 52px; 
+  font-size: 22px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.account-seting__details {
+  padding: 50px 80px 20px;
+  border-bottom: 1px solid #E5E5E5;
+  h3 {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+.account-seting__list {
+  padding-left: 40px;
+  li {
+    height: 20px;
+    line-height: 20px;
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 16px;
+    -justify-content: space-around;
+    label {
+      width: 140px;
+    }
+    p {
+      width: 350px;
+      color: #999;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      margin-left: 100px;
+    }
+    .bind-btn {
+      width: 70px;
+      color: #999;
+      cursor: pointer;
+      margin-left: auto;
+    }
+    .bind-active {
+      color: #2595FF;
+    }
+  }
+  .bind-checkbox {
+    /deep/.el-checkbox__input {
+      width: 20px;
+      height: 20px;
+      outline: none;
+      .el-checkbox__inner {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+      }
+      .is-checked {
+        font-size: 100px; 
+      }
+    }
+  }
+  label.el-checkbox.bind-checkbox.is-checked {
+    /deep/.el-checkbox__input.is-checked .el-checkbox__inner::after {
+      top: 3px;
+      left: 6px;
+    }
+  }
+}
+.account-info {
+  border: none;
+  li {
+    label {
+      width: 80px;
+    }
+    p {
+      width: 250px;
+      margin-left: 0;
+    }
+    span {
+      color: #2595FF;
+      cursor: pointer;
+    }
+  }
+  
+}

@@ -1,0 +1,50 @@
+.change-phone {
+  /deep/.el-dialog {
+    width: 560px;
+    border-radius: 6px;
+    .el-dialog__header {
+      padding: 34px 48px 0;
+      .el-dialog__title {
+        font-size: 22px;
+      }
+    }
+    .el-dialog__body {
+      padding: 44px 48px;
+      .el-form-item__label {
+        width: 100px !important;
+        height: 60px;
+        line-height: 60px;
+        font-size: 18px;
+      }
+      .el-form-item__content {
+        margin-left: 100px !important;
+      }
+      .code {
+        width: 220px;
+      }
+      .code-btn {
+        width: 132px;
+        height: 58px;
+        margin-left: 10px;
+        border: 1px solid #2595FF;
+        color: #2595FF;
+      }
+      .code-btn[disabled="disabled"] {
+        background: #d9ecff;
+        color: #8cc5ff;
+        border: 1px solid #d9ecff;
+      }
+      
+    }
+    .el-dialog__footer {
+      padding: 0 0 40px 0px;
+      .el-button {
+        width: 256px;
+        height: 58px;
+        display: block;
+        margin: 0 auto;
+        font-size: 18px;
+      }
+    }
+  }
+}

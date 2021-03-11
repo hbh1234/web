@@ -1,0 +1,121 @@
+.login-wrap {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ccc;
+}
+.login-content {
+  width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.login {
+  width: 532px;
+  height: 630px;
+  background: #fff;
+  margin: 4px 0 4px;
+  position: relative;
+  float: right;
+}
+.login-title {
+  height: 24px;
+  line-height: 24px;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 40px;
+}
+.login-body {
+  padding: 44px 62px 0;
+  box-sizing: border-box;
+}
+.el-form-item__content {
+  margin-left: 0 !important;
+}
+.forget-password {
+  .el-form-item__content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0 !important;
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+  }
+  .forget-password__inner {
+    cursor: pointer;
+  }
+}
+.login .el-input__prefix {
+  padding: 10px 0 0 12px;
+  box-sizing: border-box;
+}
+.login .el-input .el-input__inner {
+  padding-left: 52px !important;
+}
+.icon-user {
+  font-size: 20px;
+}
+.icon-pas-icon{
+  font-size: 24px;
+}
+.login-btn {
+  width: 100%;
+  height: 58px;
+  display: block;
+}
+.login-other {
+  padding: 20px 70px 0;
+}
+.login-other-title {
+  font-size: 22px;
+  color: #999;
+  text-align: center;
+  position: relative;
+  span {
+    display: inline-block;
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+  }
+  &::before {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    content: "";
+    left: 0;
+    top: 16px;
+    background: #ddd;
+  }
+}
+.login-other-list {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  li {
+    width: 52px;
+    height: 52px;
+    overflow: hidden;
+    cursor: pointer;
+    img {
+      width: 52px;
+    }
+  }
+}
+.login-foot {
+  width: 100%;
+  height: 66px;
+  line-height: 66px;
+  background: #F6F8FA;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #999;
+  .register {
+    color: #4496FF;
+    cursor: pointer;
+  }
+}

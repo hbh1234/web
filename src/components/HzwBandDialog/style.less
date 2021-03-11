@@ -1,0 +1,42 @@
+/* 绑定账号弹出层 */
+.bind-dialog {
+  /deep/.el-dialog {
+    width: 560px;
+    border-radius: 6px;
+    padding: 0;
+    overflow: hidden;
+    .el-dialog__title {
+      font-size: 22px;
+      color: #333;
+    }
+    .el-dialog__header {
+      padding: 37px 60px 42px;
+    }
+    .el-dialog__body {
+      padding: 0 60px;
+      .el-form-item__content {
+        display: flex;
+      }
+      .el-form-item__label {
+        width: 80px;
+        height: 58px;
+        line-height: 58px;
+        font-size: 16px;
+        color: rgb(59, 40, 40);
+      }
+      .el-select {
+        width: 100%;
+      }
+    }
+    .el-dialog__footer {
+      padding: 0 60px 46px 60px;
+      button {
+        width: 256px;
+        height: 58px;
+        margin: 0 auto;
+        display: block;
+        font-size: 16px;
+      }
+    }
+  }
+}

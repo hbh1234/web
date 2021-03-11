@@ -1,0 +1,79 @@
+@import "./rest.less";
+/* 对elementUI 改写 author:HBH createTime: 2021-02-05 */
+/* 改写input */
+.el-input {
+  .el-input__inner {
+    height: 58px;
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+  }
+}
+.el-button[disabled="disabled"] {
+  background: #d9ecff;
+  color: #8cc5ff;
+  border: 1px solid #d9ecff !important;
+  &:hover {
+    background: #d9ecff;
+    color: #8cc5ff;
+    border: 1px solid #d9ecff;
+  }
+}
+/* 改写 primary 类型按钮颜色 */
+.el-button--primary {
+  background: #4496FF;
+  border: none;
+}
+.el-button--primary:hover {
+  background: #4496FF;
+}
+.el-button--primary.active {
+  background: #4496FF;
+}
+.el-button--primary:focus,
+.el-button--primary:active:focus,
+.el-button--primary.active:focus,
+.el-button--primary.focus,
+.el-button--primary:active.focus,
+.el-button--primary.active.focus {
+  background: #4496FF;
+}
+.el-button--primary.is-disabled, .el-button--primary.is-disabled:hover, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:active {
+  background: #ddd;
+}
+/* 头部 el-dropdown-menu */
+.app-head-operation__dropdown {
+  border-radius: 1px;
+  .popper__arrow {
+    display: none;
+  }
+}
+/* radio 颜色 */
+.el-radio__input.is-checked .el-radio__inner {
+  background: #2595FF;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  background: #2595FF;
+  border: 1px solid #2595FF;
+}
+.el-loading-mask.app-loading {
+  z-index: 4888;
+}
+/* 重写el-breadcrumb */
+.icon-gps {
+  margin-right: 10px;
+  font-size: 16px;
+  position: relative;
+  top: 2px;
+}
+.el-breadcrumb__inner {
+  color: #999;
+}
+.el-breadcrumb__inner.is-link, .el-breadcrumb__inner a {
+  font-weight: normal !important;
+  position: relative;
+  top: -3px;
+  color: #999;
+}
+.el-breadcrumb__item:last-child .el-breadcrumb__inner, .el-breadcrumb__item:last-child .el-breadcrumb__inner:hover, .el-breadcrumb__item:last-child .el-breadcrumb__inner a, .el-breadcrumb__item:last-child .el-breadcrumb__inner a:hover {
+  color: #2595FF;
+}

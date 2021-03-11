@@ -1,0 +1,134 @@
+.layout-app {
+  width: 100%;
+  .layout-head {
+    width: 100%;
+    height: 84px;
+    background: #fff;
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06);
+  }
+  .layout-body {
+    width: 100%;
+    position: absolute;
+    top: 104px;
+    bottom: 150px;
+    overflow: auto;
+    .layout-content {
+      width: 1440px;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      font-size: 14px;
+      justify-content: space-between;
+      .layout-aside {
+        width: 300px;
+        padding: 22px 0px;
+        box-sizing: border-box;
+        background: #fff;
+      }
+      .layout-main {
+        width: 1120px;
+        background: #fff;
+        position: relative;
+      }
+    }
+  }
+  .layout-foot {
+    width: 100%;
+    height: 128px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+  }
+}
+// 应用内部主体布局
+.app-main-layout {
+  padding: 24px 30px;
+  position: relative;
+  height: 100%;
+  background: #fff;
+  box-sizing: border-box;
+}
+.app-main__head {
+  font-size: 20px;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+.app-main__body {
+  position: absolute;
+  right: 30px;
+  left: 30px;
+  top: 70px;
+  bottom: 30px;
+}
+/* 会员中心页面布局修改成body随内容撑开 */
+.layout-head.layout-head--relative {
+  position: fixed;
+  z-index: 1;
+}
+.layout-body.layout-body--relative {
+  position: relative;
+  height: 100%;
+  top: 104px;
+  .app-main__body {
+    position: relative;
+  }
+  .app-main-layout {
+    padding: 0;
+  }
+  .app-main__body {
+    position: relative;
+    left: 0;
+  }
+  .my-panel {
+    width: 326px;
+  }
+  .my-panel-big {
+    width: 514px;
+  }
+}
+.layout-foot.layout-foot--relative {
+  position: relative;
+  top: 120px;
+}
+/* 右侧工具栏 */
+.fixedtool {
+  position: fixed;
+  top: 120px;
+  right: 170px;
+  li {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    color: #2595FF;
+    i {
+      font-size: 30px;
+    }
+    p {
+      width: 100px;
+      line-height: 50px;
+      position: absolute;
+      top: 0;
+      left: 60px;
+      font-size: 16px;
+      text-align: left;
+    }
+    &:hover {
+      background: #2595ff;
+      color: #fff;
+      p {
+        font-size: 16px;
+        color: #2595ff;
+      }
+      i {
+        font-size: 28px;
+      }
+    }
+  }
+}

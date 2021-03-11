@@ -1,0 +1,162 @@
+/* 群组概览 */
+.green {
+  background: #EBFCF5;
+}
+.red {
+  background: #FFF4F3;
+}
+.orange {
+  background: #FFF8F2;
+}
+.font-color-9 {
+  color: #999;
+}
+.overview {
+  width: 100%;
+  height: 100%;
+}
+.overview-head {
+  width: 100%;
+  display: flex;
+  height: 124px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.overview-head-block {
+  width: 322px;
+  height: 124px;
+  overflow: hidden;
+  background: #F3F8FF;
+  border-radius: 4px;
+  border-left: 6px solid #2595FF;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  h4 {  
+    color: #2595FF;
+    font-size: 18px;
+    padding-bottom: 14px;
+  }
+  p {
+    height: 50px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #999;
+    overflow: auto;
+  }
+}
+.overview-head-list-block {
+  width: 224px;
+  height: 124px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  dt {
+    line-height: 40px;
+    font-size: 28px;
+  }
+  dd { 
+    font-size: 16px;
+    color: #999;
+    padding-top: 6px;
+  }
+  img {
+    width: 46px;
+    height: 46px;
+    align-self: center;
+  }
+}
+.overview-title {
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 0 22px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.overview-title__search {
+  font-size: 16px;
+  color: #999;
+  cursor: pointer;
+}
+.overview-scroll {
+  width: 100%;
+  position: absolute;
+  background: #fff;
+  top: 220px;
+  bottom: 0;
+  overflow: auto;
+}
+.overview-list {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: auto;
+  tr {
+    height: 77px;
+    line-height: 77px;
+    overflow: hidden;
+    font-size: 14px;
+    padding-left: 24px;
+    box-sizing: border-box;
+    position: relative;
+    td {
+      border-bottom: 1px solid #E5E5E5;
+      background: none;
+    }
+    .icon {
+      background: url(~@/assets/web_app_images/arrowright.png) no-repeat right 20px top 30px;
+      background-size: 18px 20px;
+    }
+  }
+}
+/* 全部共享 */
+.share {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+/* 群组管理 */
+.manage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+.manage-head {
+  display: flex;
+  justify-content: space-between;
+}
+.manage-head__group-details {
+  display: flex;
+  margin-bottom: 30px;
+  img {
+    width: 74px;
+    height: 74px;
+  }
+  dl {
+    padding-left: 24px;
+    dt {
+      height: 26px;
+      line-height: 26px;
+      font-size: 18px;
+      color: #333;
+      padding: 4px 0;
+    }
+    dd {
+      line-height: 22px;
+      font-size: 14px;
+      color: #999;
+    }
+  }
+}
+.manage-table-wrap {
+  width: 100%;
+  position: absolute;
+  top: 90px;
+  bottom: 0;
+  box-sizing: border-box;
+}

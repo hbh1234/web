@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "saasfont";
+  src: url('saasfont.eot?t=1614595226264'); /* IE9*/
+  src: url('saasfont.eot?t=1614595226264#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("saasfont.woff2?t=1614595226264") format("woff2"),
+  url("saasfont.woff?t=1614595226264") format("woff"),
+  url('saasfont.ttf?t=1614595226264') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('saasfont.svg?t=1614595226264#saasfont') format('svg'); /* iOS 4.1- */
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'saasfont' !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-bell:before { content: "\ea01"; }
+.icon-bof:before { content: "\ea02"; }
+.icon-client:before { content: "\ea03"; }
+.icon-close:before { content: "\ea04"; }
+.icon-cpzx:before { content: "\ea05"; }
+.icon-del:before { content: "\ea06"; }
+.icon-down:before { content: "\ea07"; }
+.icon-download:before { content: "\ea08"; }
+.icon-folder:before { content: "\ea09"; }
+.icon-gps:before { content: "\ea0a"; }
+.icon-grzy:before { content: "\ea0b"; }
+.icon-gwc:before { content: "\ea0c"; }
+.icon-gywm:before { content: "\ea0d"; }
+.icon-hyzx:before { content: "\ea0e"; }
+.icon-jszx:before { content: "\ea0f"; }
+.icon-mhc-member:before { content: "\ea10"; }
+.icon-more:before { content: "\ea11"; }
+.icon-pas-icon:before { content: "\ea12"; }
+.icon-qz:before { content: "\ea13"; }
+.icon-refresh:before { content: "\ea14"; }
+.icon-setting:before { content: "\ea15"; }
+.icon-share:before { content: "\ea16"; }
+.icon-stop:before { content: "\ea17"; }
+.icon-user:before { content: "\ea18"; }
+.icon-wallet:before { content: "\ea19"; }
+.icon-zygl:before { content: "\ea1a"; }
