@@ -15,6 +15,7 @@ const Axios = axios.create();
 // 取消请求
 Axios.CancelToken = axios.CancelToken;
 Axios.defaults.baseURL = "/api";
+console.log("输入环境变量", process.env.NODE_ENV);
 // 链接超时 10s
 Axios.defaults.timeout = 20000;
 // CORS 跨域允许携带资源凭证

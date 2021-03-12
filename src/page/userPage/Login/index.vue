@@ -9,7 +9,7 @@
       <div class="login-content">
         <div class="login">
           <div class="login-body">
-            <h3 class="login-title">欢迎来到鸿云！请登录{{ isLogin }}</h3>
+            <h3 class="login-title">欢迎来到鸿云！请登录--测试修改</h3>
             <el-form ref="form" :model="loginData" label-width="80px">
               <el-form-item>
                 <el-input
